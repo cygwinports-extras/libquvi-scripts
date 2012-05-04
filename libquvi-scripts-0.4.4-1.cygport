@@ -1,6 +1,6 @@
 DESCRIPTION="Flash Video download link parser"
 HOMEPAGE="http://quvi.sourceforge.net/"
-SRC_URI="mirror://sourceforge/quvi/${P}.tar.bz2"
+SRC_URI="mirror://sourceforge/quvi/${P}.tar.xz"
 
 src_compile() {
 	cd ${B}
