@@ -1,5 +1,5 @@
 NAME="libquvi-scripts"
-VERSION=0.4.16
+VERSION=0.4.21
 RELEASE=1
 CATEGORY="Video"
 SUMMARY="Flash Video download link parser library (data)"
@@ -11,8 +11,15 @@ uses Lua for embeddable scripting."
 HOMEPAGE="http://quvi.sourceforge.net/"
 SRC_URI="mirror://sourceforge/quvi/${NAME}-${VERSION}.tar.xz"
 
+ARCH=noarch
+
 src_compile() {
 	cd ${B}
 	cygconf
 	cygmake
+}
+
+src_install() {
+	cd ${B}
+	cyginstall dist_man_MANS=
 }
